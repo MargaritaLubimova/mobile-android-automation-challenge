@@ -26,6 +26,10 @@ class ListActivity : AppCompatActivity() {
 
     private val listOfExercises: ArrayList<String> = ArrayList()
 
+    fun getListOfExercises(): ArrayList<String> {
+        return listOfExercises
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
